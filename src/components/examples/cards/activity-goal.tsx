@@ -56,14 +56,7 @@ const data = [
     },
 ]
 
-const barStyle: React.CSSProperties = {
-    fill: `var(--primary)`,
-    opacity: 0.2,
-};
-
 export function CardsActivityGoal() {
-    const { resolvedTheme: theme } = useTheme()
-
     const [goal, setGoal] = React.useState(350)
 
     function onClick(adjustment: number) {
@@ -71,7 +64,7 @@ export function CardsActivityGoal() {
     }
 
     return (
-        <Card className={'h-fit'}>
+        <Card className={'h-fit col-span-1'}>
             <CardHeader className="pb-4">
                 <CardTitle className="text-base">Move Goal</CardTitle>
                 <CardDescription>Set your daily activity goal.</CardDescription>
@@ -110,7 +103,10 @@ export function CardsActivityGoal() {
                         <BarChart data={data}>
                             <Bar
                                 dataKey="goal"
-                                style={barStyle}
+                                style={{
+                                    fill: 'hsl(var(--primary))',
+                                    opacity: 0.2
+                                }}
                             />
                         </BarChart>
                     </ResponsiveContainer>

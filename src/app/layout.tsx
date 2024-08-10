@@ -3,6 +3,7 @@ import {Rubik} from "next/font/google";
 import "./globals.css";
 import {ThemeProvider} from "@/components/theme-provider";
 import {Styles} from "@/components/styles";
+import {ColorProvider} from "@/components/theme-color-provider";
 const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,11 +21,12 @@ export default function RootLayout({
         <ThemeProvider
             attribute="class"
             defaultTheme="dark"
-            enableSystem
             disableTransitionOnChange
         >
-          <Styles/>
-          {children}
+          <ColorProvider>
+            <Styles/>
+            {children}
+          </ColorProvider>
         </ThemeProvider>
       </body>
     </html>

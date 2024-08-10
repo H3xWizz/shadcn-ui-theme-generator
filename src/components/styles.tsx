@@ -1,60 +1,68 @@
+"use client"
+
+import { useColors } from "@/components/theme-color-provider";
+
 export function Styles() {
-    return (<style>
-        {`
-        :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
-    --radius: 0.5rem;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-  }
- 
-  .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
-  }
-        `}
-    </style>)
+    const { colors } = useColors();
+
+    return (
+        <style>
+            {`
+                :root {
+                    --background: ${colors.light.background};
+                    --foreground: ${colors.light.foreground};
+                    --card: ${colors.light.card};
+                    --card-foreground: ${colors.light.cardForeground};
+                    --popover: ${colors.light.popover};
+                    --popover-foreground: ${colors.light.popoverForeground};
+                    --primary: ${colors.light.primary};
+                    --primary-foreground: ${colors.light.primaryForeground};
+                    --secondary: ${colors.light.secondary};
+                    --secondary-foreground: ${colors.light.secondaryForeground};
+                    --muted: ${colors.light.muted};
+                    --muted-foreground: ${colors.light.mutedForeground};
+                    --accent: ${colors.light.accent};
+                    --accent-foreground: ${colors.light.accentForeground};
+                    --destructive: ${colors.light.destructive};
+                    --destructive-foreground: ${colors.light.destructiveForeground};
+                    --border: ${colors.light.border};
+                    --input: ${colors.light.input};
+                    --ring: ${colors.light.ring};
+                    --radius: ${colors.light.radius}rem;
+                    --chart-1: ${colors.light.chart1};
+                    --chart-2: ${colors.light.chart2};
+                    --chart-3: ${colors.light.chart3};
+                    --chart-4: ${colors.light.chart4};
+                    --chart-5: ${colors.light.chart5};
+                }
+
+                .dark {
+                    --background: ${colors.dark.background};
+                    --foreground: ${colors.dark.foreground};
+                    --card: ${colors.dark.card};
+                    --card-foreground: ${colors.dark.cardForeground};
+                    --popover: ${colors.dark.popover};
+                    --popover-foreground: ${colors.dark.popoverForeground};
+                    --primary: ${colors.dark.primary};
+                    --primary-foreground: ${colors.dark.primaryForeground};
+                    --secondary: ${colors.dark.secondary};
+                    --secondary-foreground: ${colors.dark.secondaryForeground};
+                    --muted: ${colors.dark.muted};
+                    --muted-foreground: ${colors.dark.mutedForeground};
+                    --accent: ${colors.dark.accent};
+                    --accent-foreground: ${colors.dark.accentForeground};
+                    --destructive: ${colors.dark.destructive};
+                    --destructive-foreground: ${colors.dark.destructiveForeground};
+                    --border: ${colors.dark.border};
+                    --input: ${colors.dark.input};
+                    --ring: ${colors.dark.ring};
+                    --chart-1: ${colors.dark.chart1};
+                    --chart-2: ${colors.dark.chart2};
+                    --chart-3: ${colors.dark.chart3};
+                    --chart-4: ${colors.dark.chart4};
+                    --chart-5: ${colors.dark.chart5};
+                }
+            `}
+        </style>
+    );
 }
