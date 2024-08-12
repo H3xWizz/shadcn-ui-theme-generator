@@ -4,6 +4,7 @@ import "./globals.css";
 import {ThemeProvider} from "@/components/theme-provider";
 import {Styles} from "@/components/styles";
 import {ColorProvider} from "@/components/theme-color-provider";
+import Script from "next/script";
 const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
