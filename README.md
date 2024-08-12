@@ -1,4 +1,4 @@
-# 🎨 Web App: Custom Color Picker for CSS
+# 🎨 Web App: Custom Color Picker for shadcn Themes
 
 ## 📚 Project Description
 
