@@ -22,10 +22,9 @@ This web application allows you to select any color and automatically generates 
 
 ## 💻 Technologies
 
-- HTML5
-- CSS3
-- JavaScript (optional: React)
-- shadcn/ui themes
+- **Framework:** Next.js (Also fully compatible with Vite, Remix, and Astro)
+- **Styling:** CSS3
+- **Additional Libraries:** shadcn/ui themes
 
 ## 📝 License
 
