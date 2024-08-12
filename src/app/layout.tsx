@@ -18,6 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={rubik.className}>
+        {process.env.NEXT_PUBLIC_ANALYTICS_TOKEN && (
+          <Script
+            src="https://cdn.rscl.it/ra.js"
+            data-token={process.env.NEXT_PUBLIC_ANALYTICS_TOKEN}
+            strategy="afterInteractive"
+          />
+        )}
         <ThemeProvider
             attribute="class"
             defaultTheme="dark"
