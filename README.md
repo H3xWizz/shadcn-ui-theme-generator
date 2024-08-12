@@ -18,7 +18,6 @@ This web application allows you to select any color and automatically generates 
 
 ## 📷 Screenshots
 
-![image](https://github.com/user-attachments/assets/9e65995b-2319-454f-9629-2c032f7c344c)
 ![image](https://github.com/user-attachments/assets/921008ad-b8b7-4dd5-a7d1-262aa581a448)
 ![image](https://github.com/user-attachments/assets/1de70872-a3d8-4bdc-88e0-a6e3e9201be7)
 ![image](https://github.com/user-attachments/assets/6d822d66-222b-4c67-8782-0c1cb71f7183)
