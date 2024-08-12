@@ -36,6 +36,10 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 If you have any questions or encounter any issues, feel free to contact me at [ksawier.malkiewicz@icloud.com](mailto:ksawier.malkiewicz@icloud.com) or open an issue in the Issues tab.
 
+## 🙏 Acknowledgments
+
+Special thanks to [z4nr34l](https://github.com/z4nr34l) for their valuable help and contributions to this project.
+
 ---
 
 *Thank you for using our application! We hope it helps you easily customize your user interface.*
