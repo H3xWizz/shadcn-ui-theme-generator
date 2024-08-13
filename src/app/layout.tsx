@@ -5,6 +5,7 @@ import {ThemeProvider} from "@/components/theme-provider";
 import {Styles} from "@/components/styles";
 import {ColorProvider} from "@/components/theme-color-provider";
 import Script from "next/script";
+import MobileInfo from "@/components/mobile-info";
 const rubik = Rubik({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({
         >
           <ColorProvider>
             <Styles/>
+            <MobileInfo/>
             {children}
           </ColorProvider>
         </ThemeProvider>
